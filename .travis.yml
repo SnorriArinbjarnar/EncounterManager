@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "stable"
+
+jobs:
+  include:
+    -stage: "Tests"
+      name: "Unit Tests"
+      script: frontend/test
+      script: backend/test 
