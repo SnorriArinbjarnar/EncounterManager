@@ -18,3 +18,15 @@ describe('get users', () => {
         });
     });
 });
+
+describe('get index', () => {
+    it('should return something', (done) => {
+        chai.request(server)
+        .get('/index')
+        .end((err, res) => {
+            res.should.have.status(200);
+            done();
+            
+        });
+    });
+});
