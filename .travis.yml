@@ -13,6 +13,8 @@ jobs:
       script: 
         - cd frontend
         - npm test
+      before_script:
+        - cd ..
       script: 
         - cd backend
         - npm test
