@@ -19,8 +19,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+// Serve all our static files from build directory
+app.use(express.static(path.join(__dirname, 'build')));
+// Keep our client side routing functional
+// Serves the index.html file on any uknown routes
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

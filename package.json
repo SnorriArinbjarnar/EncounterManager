@@ -1,0 +1,21 @@
+{
+  "name": "encountermanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node backend/bin/www",
+    "heroku-postbuild" : "cd frontend && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnorriArinbjarnar/EncounterManager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SnorriArinbjarnar/EncounterManager/issues"
+  },
+  "homepage": "https://github.com/SnorriArinbjarnar/EncounterManager#readme"
+}
