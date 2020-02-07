@@ -19,7 +19,7 @@ describe('get users', () => {
     });
 });
 
-describe('get index', () => {
+describe('get sindex', () => {
     it('should return something', (done) => {
         chai.request(server)
         .get('/index')
