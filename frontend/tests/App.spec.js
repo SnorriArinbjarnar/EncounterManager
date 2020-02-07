@@ -4,7 +4,7 @@ describe('My test suite', () => {
     });
 });
 
-describe('My test ssuite2', () => {
+describe('My test sssuite2', () => {
     it('My Test Cases2', () => {
         expect(true).toEqual(true);
     });
